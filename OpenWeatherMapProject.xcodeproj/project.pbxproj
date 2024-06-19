@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		EF250D862C2349D300F9B14F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF250D852C2349D300F9B14F /* AppDelegate.swift */; };
 		EF250D882C2349D300F9B14F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF250D872C2349D300F9B14F /* SceneDelegate.swift */; };
-		EF250D8A2C2349D300F9B14F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF250D892C2349D300F9B14F /* ViewController.swift */; };
-		EF250D8D2C2349D300F9B14F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EF250D8C2C2349D300F9B14F /* Base */; };
+		EF250D8A2C2349D300F9B14F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF250D892C2349D300F9B14F /* WeatherViewController.swift */; };
 		EF250D8F2C2349D400F9B14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF250D8E2C2349D400F9B14F /* Assets.xcassets */; };
 		EF250D922C2349D400F9B14F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EF250D912C2349D400F9B14F /* Base */; };
+		EF250D9B2C2349F400F9B14F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF250D9A2C2349F400F9B14F /* SnapKit */; };
+		EF250D9E2C234A0900F9B14F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EF250D9D2C234A0900F9B14F /* Alamofire */; };
+		EF250DA02C234B4700F9B14F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EF250D9F2C234B4700F9B14F /* .gitignore */; };
+		EF250DA22C234BA100F9B14F /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF250DA12C234BA100F9B14F /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF250D822C2349D300F9B14F /* OpenWeatherMapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherMapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF250D852C2349D300F9B14F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF250D872C2349D300F9B14F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF250D892C2349D300F9B14F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF250D8C2C2349D300F9B14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF250D892C2349D300F9B14F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		EF250D8E2C2349D400F9B14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF250D912C2349D400F9B14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF250D932C2349D400F9B14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF250D9F2C234B4700F9B14F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EF250DA12C234BA100F9B14F /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF250D9B2C2349F400F9B14F /* SnapKit in Frameworks */,
+				EF250D9E2C234A0900F9B14F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 		EF250D792C2349D300F9B14F = {
 			isa = PBXGroup;
 			children = (
+				EF250D9F2C234B4700F9B14F /* .gitignore */,
 				EF250D842C2349D300F9B14F /* OpenWeatherMapProject */,
 				EF250D832C2349D300F9B14F /* Products */,
 			);
@@ -58,11 +65,11 @@
 			children = (
 				EF250D852C2349D300F9B14F /* AppDelegate.swift */,
 				EF250D872C2349D300F9B14F /* SceneDelegate.swift */,
-				EF250D892C2349D300F9B14F /* ViewController.swift */,
-				EF250D8B2C2349D300F9B14F /* Main.storyboard */,
+				EF250D892C2349D300F9B14F /* WeatherViewController.swift */,
 				EF250D8E2C2349D400F9B14F /* Assets.xcassets */,
 				EF250D902C2349D400F9B14F /* LaunchScreen.storyboard */,
 				EF250D932C2349D400F9B14F /* Info.plist */,
+				EF250DA12C234BA100F9B14F /* APIKey.swift */,
 			);
 			path = OpenWeatherMapProject;
 			sourceTree = "<group>";
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = OpenWeatherMapProject;
+			packageProductDependencies = (
+				EF250D9A2C2349F400F9B14F /* SnapKit */,
+				EF250D9D2C234A0900F9B14F /* Alamofire */,
+			);
 			productName = OpenWeatherMapProject;
 			productReference = EF250D822C2349D300F9B14F /* OpenWeatherMapProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = EF250D792C2349D300F9B14F;
+			packageReferences = (
+				EF250D992C2349F400F9B14F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EF250D9C2C234A0900F9B14F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EF250D832C2349D300F9B14F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF250D8F2C2349D400F9B14F /* Assets.xcassets in Resources */,
+				EF250DA02C234B4700F9B14F /* .gitignore in Resources */,
 				EF250D922C2349D400F9B14F /* Base in Resources */,
-				EF250D8D2C2349D300F9B14F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF250D8A2C2349D300F9B14F /* ViewController.swift in Sources */,
+				EF250D8A2C2349D300F9B14F /* WeatherViewController.swift in Sources */,
 				EF250D862C2349D300F9B14F /* AppDelegate.swift in Sources */,
+				EF250DA22C234BA100F9B14F /* APIKey.swift in Sources */,
 				EF250D882C2349D300F9B14F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF250D8B2C2349D300F9B14F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF250D8C2C2349D300F9B14F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF250D902C2349D400F9B14F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,8 +305,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +315,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.seunghye.OpenWeatherMapProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +337,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +347,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.seunghye.OpenWeatherMapProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +379,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF250D992C2349F400F9B14F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		EF250D9C2C234A0900F9B14F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF250D9A2C2349F400F9B14F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF250D992C2349F400F9B14F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EF250D9D2C234A0900F9B14F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF250D9C2C234A0900F9B14F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF250D7A2C2349D300F9B14F /* Project object */;
 }
